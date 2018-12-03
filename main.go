@@ -15,6 +15,7 @@ _ "github.com/go-sql-driver/mysql"
 
 
 type TMDb struct {
+	//
 	apiKey string
   }
 func main(){
