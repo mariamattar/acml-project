@@ -1,3 +1,5 @@
+
+
 package main
 import (	//"encoding/json"
  //"github.com/ryanbradynd05/go-tmdb"
@@ -8,14 +10,12 @@ import (	//"encoding/json"
 "os"
 "database/sql"
 _ "github.com/go-sql-driver/mysql"
-
+//p
 
 
 )
-
-
 type TMDb struct {
-	//
+	
 	apiKey string
   }
 func main(){
@@ -51,11 +51,15 @@ func main(){
 		panic(err1)
 	}
  
+
+
 stmt, err := db.Prepare("CREATE Table wishlist(id int NOT NULL AUTO_INCREMENT, movie1 varchar(500), PRIMARY KEY (id));")
  if err != nil {
  fmt.Println(err.Error())
  }
  
+
+
  _, err = stmt.Exec()
  if err != nil {
  fmt.Println(err.Error())
@@ -68,6 +72,6 @@ stmt, err := db.Prepare("CREATE Table wishlist(id int NOT NULL AUTO_INCREMENT, m
 		panic(err.Error()) // proper error handling instead of panic in your app
 	}
 	defer stmtIns.Close() // Close the statement when w
- //
+ 
 
 }
