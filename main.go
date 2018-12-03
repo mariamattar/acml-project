@@ -67,6 +67,6 @@ stmt, err := db.Prepare("CREATE Table wishlist(id int NOT NULL AUTO_INCREMENT, m
 		panic(err.Error()) // proper error handling instead of panic in your app
 	}
 	defer stmtIns.Close() // Close the statement when w
-
+ //
 
 }
