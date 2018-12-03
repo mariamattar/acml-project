@@ -1,2 +1,3 @@
 # acml-project
-**ID:** 37-6078
+**API:** the movie api
+run project : go run main.go
